@@ -18,7 +18,8 @@
     "preinstall": "npx only-allow pnpm",
     "postinstall": "make git-hook",
     "lint:files": "ls-lint",
-    "build": "tsup src --format cjs,esm --dts",
+    "build": "tsup src --env.NODE_ENV production",
+    "bundlesize": "bundlesize --config bundlesize.config.json",
     "test:jest": "jest --passWithNoTests",
     "release": "npx bumpp --commit --push --tag && npm publish",
     "prepublishOnly": "pnpm build"

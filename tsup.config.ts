@@ -8,11 +8,9 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const options: Options = {
   entryPoints: ['src/index.ts'],
-  format: ['cjs', 'esm'],
   pure: isProd ? ['console.log', 'console.warn', 'debugger'] : undefined,
-  sourcemap: true,
+  sourcemap: !isProd,
   splitting: false,
-  dts: true,
   external,
   ignoreWatch: ['**/{.git,node_modules}/**', 'dist', 'src/**/*.spec.ts'],
 };
