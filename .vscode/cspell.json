@@ -1,13 +1,17 @@
 {
-  "version": "0.1",
-  "words": [
-    "harrytran",
-    "inmemory",
-    "lozad",
-    "patreon",
-    "preinstall",
-    "shipjs",
-    "stylelint",
-    "vite"
-  ]
+    "version": "0.1",
+    "words": [
+        "bumpp",
+        "harrytran",
+        "inmemory",
+        "lozad",
+        "patreon",
+        "pnpx",
+        "preinstall",
+        "shipjs",
+        "stylelint",
+        "techmely",
+        "tsup",
+        "vite"
+    ]
 }

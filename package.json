@@ -1,31 +1,36 @@
 {
   "name": "template-typescript",
-  "description": "Template for all project using typescript",
   "version": "0.0.1",
-  "main": "index.js",
+  "description": "Template for all project using typescript",
   "author": "Harry Tran <nhattq.coding@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechMeLy/template-typescript.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "postinstall": "make git-hook",
-    "lint:files": "ls-lint"
+    "lint:files": "ls-lint",
+    "build": "tsup src --format cjs,esm --dts",
+    "release": "npx bumpp --commit --push --tag && npm publish",
+    "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
-    "@ls-lint/ls-lint": "^1.9.2",
-    "@typescript-eslint/eslint-plugin": "^4.24.0",
-    "@typescript-eslint/parser": "^4.24.0",
-    "eslint": "^7.27.0",
-    "eslint-config-airbnb-typescript": "^12.3.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "typescript": "^4.2.4"
+    "@ls-lint/ls-lint": "^1.10.0",
+    "@sucrase/jest-plugin": "^2.1.1",
+    "@techmely/eslint-config-ts": "^0.0.3",
+    "eslint": "^7.32.0",
+    "jest": "^27.1.0",
+    "tsup": "^4.14.0",
+    "typescript": "^4.4.2"
   },
   "engines": {
     "node": ">=14.15.4",
     "npm": ">= 7.0.15"
-  },
-  "repository": "https://github.com/harrytran998/template-typescript.git",
-  "bugs": {
-    "url": "https://github.com/harrytran998/template-typescript/issues"
   },
   "funding": [
     {
