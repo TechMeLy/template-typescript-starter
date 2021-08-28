@@ -1,7 +1,7 @@
 {
   "name": "template-typescript",
   "version": "0.0.1",
-  "description": "Template for all project using typescript",
+  "description": "",
   "author": "Harry Tran <nhattq.coding@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -11,11 +11,15 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "make git-hook",
     "lint:files": "ls-lint",
     "build": "tsup src --format cjs,esm --dts",
+    "test:jest": "jest --passWithNoTests",
     "release": "npx bumpp --commit --push --tag && npm publish",
     "prepublishOnly": "pnpm build"
   },
@@ -23,6 +27,8 @@
     "@ls-lint/ls-lint": "^1.10.0",
     "@sucrase/jest-plugin": "^2.1.1",
     "@techmely/eslint-config-ts": "^0.0.3",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.4",
     "eslint": "^7.32.0",
     "jest": "^27.1.0",
     "tsup": "^4.14.0",
