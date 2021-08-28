@@ -30,6 +30,7 @@
     "@techmely/eslint-config-ts": "^0.0.3",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.4",
+    "bundlesize": "^0.18.1",
     "eslint": "^7.32.0",
     "jest": "^27.1.0",
     "tsup": "^4.14.0",
