@@ -1,5 +1,6 @@
-import pkg from './package.json';
 import { Options } from 'tsup';
+
+import pkg from './package.json';
 
 const external = [
   ...new Set([...Object.keys(pkg.dependencies ?? {}), ...Object.keys(pkg.peerDependencies ?? {})]),

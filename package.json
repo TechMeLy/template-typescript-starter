@@ -18,7 +18,7 @@
     "preinstall": "npx only-allow pnpm",
     "postinstall": "make git-hook",
     "lint:files": "ls-lint",
-    "build": "tsup src --env.NODE_ENV production",
+    "build": "tsup --env.NODE_ENV production",
     "bundlesize": "bundlesize --config bundlesize.config.json",
     "test:jest": "jest --passWithNoTests",
     "release": "npx bumpp --commit --push --tag && npm publish",
@@ -27,14 +27,18 @@
   "devDependencies": {
     "@ls-lint/ls-lint": "^1.10.0",
     "@sucrase/jest-plugin": "^2.1.1",
-    "@techmely/eslint-config-ts": "^0.0.3",
+    "@techmely/eslint-config-ts": "^0.0.10",
+    "@techmely/types": "^0.0.2",
     "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.4",
+    "@types/node": "^16.9.1",
+    "@types/rimraf": "^3",
     "bundlesize": "^0.18.1",
     "eslint": "^7.32.0",
-    "jest": "^27.1.0",
+    "jest": "^27.1.1",
+    "rimraf": "^3.0.2",
+    "sucrase": "^3.20.1",
     "tsup": "^4.14.0",
-    "typescript": "^4.4.2"
+    "typescript": "^4.4.3"
   },
   "engines": {
     "node": ">=14.15.4",
@@ -49,5 +53,6 @@
       "type": "patreon",
       "url": "https://www.patreon.com/harrytran998"
     }
-  ]
+  ],
+  "packageManager": "yarn@3.0.1"
 }
