@@ -2,4 +2,4 @@
 
 echo 'Star linting files name...'
 yarn lint:files
-echo 'Linting files name done!'
+echo '\nLinting files name done!'

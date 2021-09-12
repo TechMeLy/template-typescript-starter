@@ -1,0 +1,32 @@
+#!/bin/bash -e
+
+textError='\033[1;31m'
+
+echo -e "\nStarting run eslint..."
+eslintAnalyzeResults=$(yarn lint:eslint:quiet)
+
+if [[ $eslintAnalyzeResults =~ "ERROR" ]]; then
+  echo "$eslintAnalyzeResults"
+  echo -e "$textError Eslint analyze failed! Pls review your code before push codes to remotes origin."
+  exit 1
+fi
+
+echo -e "\n Starting run unit test..."
+unitTestResult=$(yarn test:jest)
+
+if [[ $unitTestResult =~ "FAIL" ]]; then
+  echo "$unitTestResult"
+  echo -e "$textError Unit test failed! Pls review your code before push codes to remotes origin."
+  exit 1
+fi
+
+echo -e "\n Starting check bundlesize..."
+bundleSizeResult=$(yarn bundlesize)
+
+if [[ $bundleSizeResult =~ "FAIL" ]]; then
+  echo "$bundleSizeResult"
+  echo -e "$textError Check bundlesize failed! Pls review your code before push codes to remotes origin."
+  exit 1
+fi
+
+echo -e "\nSuccessfully, starting push your code on remotes origin."

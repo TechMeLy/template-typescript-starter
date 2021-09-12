@@ -564,4 +564,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Yarn 3
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
 # End of https://www.toptal.com/developers/gitignore/api/node,macos,windows,intellij,reactnative,flutter
