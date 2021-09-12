@@ -18,11 +18,14 @@
     "preinstall": "npx only-allow pnpm",
     "postinstall": "make git-hook",
     "lint:files": "ls-lint",
+    "lint:eslint": "eslint --cache --ext .ts . --ignore-path .eslintignore",
+    "lint:eslint:quiet": "eslint --cache --ext .ts . --ignore-path .eslintignore --quiet",
+    "lint:eslint:fix": "eslint --cache --ext .ts . --ignore-path .eslintignore --fix",
     "build": "tsup --env.NODE_ENV production",
     "bundlesize": "bundlesize --config bundlesize.config.json",
     "test:jest": "jest --passWithNoTests",
-    "release": "npx bumpp --commit --push --tag && npm publish",
-    "prepublishOnly": "pnpm build"
+    "test:jest:silent": "jest --silent --passWithNoTests",
+    "release": "npx bumpp --commit --push --tag && npm publish"
   },
   "devDependencies": {
     "@ls-lint/ls-lint": "^1.10.0",

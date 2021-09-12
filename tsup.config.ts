@@ -8,7 +8,8 @@ const external = [
 const isProd = process.env.NODE_ENV === 'production';
 
 const options: Options = {
-  entryPoints: ['src/index.ts'],
+  entryPoints: ['src'],
+  format: ['cjs', 'esm'],
   pure: isProd ? ['console.log', 'console.warn', 'debugger'] : undefined,
   sourcemap: !isProd,
   splitting: false,
