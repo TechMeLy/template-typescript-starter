@@ -1446,7 +1446,7 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esbuild@^0.12.9:
+esbuild@^0.12.28:
   version "0.12.29"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.29.tgz#be602db7c4dc78944a9dbde0d1ea19d36c1f882d"
 
@@ -3669,7 +3669,7 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
-sucrase@^3.18.0, sucrase@^3.18.1, sucrase@^3.20.1:
+sucrase@^3.18.0, sucrase@^3.20.1:
   version "3.20.1"
   resolved "https://registry.yarnpkg.com/sucrase/-/sucrase-3.20.1.tgz#1c055e97d0fab2f9857f02461364075b3a4ab226"
   dependencies:
@@ -3829,22 +3829,22 @@ tslib@^1.8.1:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
 
-tsup@^4.14.0:
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/tsup/-/tsup-4.14.0.tgz#3e2f602d8446041b48fcb557904a709c0fcec981"
+tsup@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/tsup/-/tsup-5.2.1.tgz#4ad4debd1d7852e8c4bb40075ebd2ee85efe7715"
   dependencies:
     cac "^6.7.2"
     chalk "^4.1.0"
     chokidar "^3.5.1"
     debug "^4.3.1"
-    esbuild "^0.12.9"
+    esbuild "^0.12.28"
     execa "^5.0.0"
     globby "^11.0.3"
     joycon "^3.0.1"
     postcss-load-config "^3.0.1"
     resolve-from "^5.0.0"
     rollup "^2.56.1"
-    sucrase "^3.18.1"
+    sucrase "^3.20.1"
     tree-kill "^1.2.2"
 
 tsutils@^3.21.0:

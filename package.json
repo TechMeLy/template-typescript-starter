@@ -40,7 +40,7 @@
     "jest": "^27.1.1",
     "rimraf": "^3.0.2",
     "sucrase": "^3.20.1",
-    "tsup": "^4.14.0",
+    "tsup": "^5.2.1",
     "typescript": "^4.4.3"
   },
   "engines": {
