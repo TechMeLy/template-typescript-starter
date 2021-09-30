@@ -519,28 +519,28 @@
   dependencies:
     sucrase "^3.18.0"
 
-"@techmely/eslint-config-ts@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@techmely/eslint-config-ts/-/eslint-config-ts-0.0.10.tgz#ab24ae4b61e3b4956f6786d5272d8a5672252ad4"
+"@techmely/eslint-config-ts@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@techmely/eslint-config-ts/-/eslint-config-ts-0.0.15.tgz#26cf243eb6fedfd5b64db2ce48bf356366a9515b"
   dependencies:
-    "@typescript-eslint/eslint-plugin" "^4.31.0"
-    "@typescript-eslint/parser" "^4.31.0"
+    "@typescript-eslint/eslint-plugin" "^4.31.2"
+    "@typescript-eslint/parser" "^4.31.2"
     eslint-config-airbnb-base "^14.2.1"
     eslint-config-prettier "^8.3.0"
-    eslint-plugin-html "^6.1.2"
+    eslint-plugin-html "^6.2.0"
     eslint-plugin-import "^2.24.2"
-    eslint-plugin-jest "^24.4.0"
+    eslint-plugin-jest "^24.4.2"
     eslint-plugin-jsdoc "^36.1.0"
-    eslint-plugin-jsonc "^1.6.0"
+    eslint-plugin-jsonc "^1.7.0"
     eslint-plugin-promise "^5.1.0"
     eslint-plugin-simple-import-sort "^7.0.0"
-    eslint-plugin-unicorn "^35.0.0"
-    eslint-plugin-yml "^0.10.0"
+    eslint-plugin-unicorn "^36.0.0"
+    eslint-plugin-yml "^0.10.1"
     yaml-eslint-parser "^0.4.1"
 
-"@techmely/types@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@techmely/types/-/types-0.0.3.tgz#b489dc8349fd80ff3e9bf1c9fde6e6e58ec2398d"
+"@techmely/types@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@techmely/types/-/types-0.0.2.tgz#f1faf609ca55bf0104c5e6e3c254abd63a16d168"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -656,7 +656,7 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@typescript-eslint/eslint-plugin@^4.31.0":
+"@typescript-eslint/eslint-plugin@^4.31.2":
   version "4.32.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.32.0.tgz#46d2370ae9311092f2a6f7246d28357daf2d4e89"
   dependencies:
@@ -680,7 +680,7 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
-"@typescript-eslint/parser@^4.31.0":
+"@typescript-eslint/parser@^4.31.2":
   version "4.32.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.32.0.tgz#751ecca0e2fecd3d44484a9b3049ffc1871616e5"
   dependencies:
@@ -1503,7 +1503,7 @@ eslint-module-utils@^2.6.2:
     debug "^3.2.7"
     pkg-dir "^2.0.0"
 
-eslint-plugin-html@^6.1.2:
+eslint-plugin-html@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-html/-/eslint-plugin-html-6.2.0.tgz#715bc00b50bbd0d996e28f953c289a5ebec69d43"
   dependencies:
@@ -1529,7 +1529,7 @@ eslint-plugin-import@^2.24.2:
     resolve "^1.20.0"
     tsconfig-paths "^3.11.0"
 
-eslint-plugin-jest@^24.4.0:
+eslint-plugin-jest@^24.4.2:
   version "24.5.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-24.5.0.tgz#a223a0040a19af749a161807254f0e47f5bfdcc3"
   dependencies:
@@ -1549,7 +1549,7 @@ eslint-plugin-jsdoc@^36.1.0:
     semver "^7.3.5"
     spdx-expression-parse "^3.0.1"
 
-eslint-plugin-jsonc@^1.6.0:
+eslint-plugin-jsonc@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsonc/-/eslint-plugin-jsonc-1.7.0.tgz#bfabaea8a7a5a0ce6b7a87992330749e7fba3e2f"
   dependencies:
@@ -1565,9 +1565,9 @@ eslint-plugin-simple-import-sort@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-7.0.0.tgz#a1dad262f46d2184a90095a60c66fef74727f0f8"
 
-eslint-plugin-unicorn@^35.0.0:
-  version "35.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-35.0.0.tgz#40797793d4f645bafaaa7a1396b8f4ca7b2a7dbd"
+eslint-plugin-unicorn@^36.0.0:
+  version "36.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-36.0.0.tgz#db50e1426839e401d33c5a279f49d4a5bbb640d8"
   dependencies:
     "@babel/helper-validator-identifier" "^7.14.9"
     ci-info "^3.2.0"
@@ -1582,7 +1582,7 @@ eslint-plugin-unicorn@^35.0.0:
     safe-regex "^2.1.1"
     semver "^7.3.5"
 
-eslint-plugin-yml@^0.10.0:
+eslint-plugin-yml@^0.10.1:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-yml/-/eslint-plugin-yml-0.10.1.tgz#6036d077c95654e2dee2d58fb0519974561d43b2"
   dependencies:
