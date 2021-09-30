@@ -538,9 +538,9 @@
     eslint-plugin-yml "^0.10.0"
     yaml-eslint-parser "^0.4.1"
 
-"@techmely/types@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@techmely/types/-/types-0.0.2.tgz#f1faf609ca55bf0104c5e6e3c254abd63a16d168"
+"@techmely/types@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@techmely/types/-/types-0.0.3.tgz#b489dc8349fd80ff3e9bf1c9fde6e6e58ec2398d"
 
 "@tootallnate/once@1":
   version "1.1.2"
