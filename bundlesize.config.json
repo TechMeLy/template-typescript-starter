@@ -5,7 +5,11 @@
       "maxSize": "10kB"
     },
     {
-      "path": "dist/index.mjs",
+      "path": "dist/module.js",
+      "maxSize": "10kB"
+    },
+    {
+      "path": "dist/legacy.js",
       "maxSize": "10kB"
     }
   ]
