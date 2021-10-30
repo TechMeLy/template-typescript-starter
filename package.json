@@ -8,44 +8,64 @@
     "type": "git",
     "url": "https://github.com/TechMeLy/template-typescript.git"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "types": "dist/types.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "preinstall": "npx only-allow yarn",
     "postinstall": "make git-hook",
     "lint:files": "ls-lint",
     "lint:eslint": "eslint --cache --ext .ts . --ignore-path .eslintignore",
     "lint:eslint:quiet": "eslint --cache --ext .ts . --ignore-path .eslintignore --quiet",
     "lint:eslint:fix": "eslint --cache --ext .ts . --ignore-path .eslintignore --fix",
-    "build": "tsup --env.NODE_ENV production",
+    "watch": "parcel watch",
+    "build": "parcel build",
     "bundlesize": "bundlesize --config bundlesize.config.json",
     "test:jest": "jest --passWithNoTests",
     "test:jest:silent": "jest --silent --passWithNoTests",
     "release": "npx bumpp --commit --push --tag && npm publish"
   },
   "devDependencies": {
-    "@ls-lint/ls-lint": "^1.10.0",
-    "@sucrase/jest-plugin": "^2.1.1",
-    "@techmely/eslint-config-ts": "^0.0.15",
-    "@techmely/types": "^0.0.3",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.9.1",
-    "@types/rimraf": "^3",
-    "bundlesize": "^0.18.1",
-    "eslint": "^7.32.0",
-    "jest": "^27.1.1",
-    "rimraf": "^3.0.2",
-    "sucrase": "^3.20.1",
-    "tsup": "^5.2.1",
-    "typescript": "^4.4.3"
+    "@ls-lint/ls-lint": "1.10.0",
+    "@parcel/babel-plugin-transform-runtime": "2.0.0",
+    "@parcel/babel-preset-env": "2.0.0",
+    "@parcel/config-default": "2.0.0",
+    "@parcel/packager-ts": "2.0.0",
+    "@parcel/transformer-typescript-tsc": "2.0.0",
+    "@parcel/transformer-typescript-types": "2.0.0",
+    "@sucrase/jest-plugin": "2.2.0",
+    "@techmely/eslint-config-ts": "0.0.16",
+    "@techmely/types": "0.0.3",
+    "@types/jest": "27.0.2",
+    "@types/node": "16.9.1",
+    "bundlesize": "0.18.1",
+    "eslint": "8.1.0",
+    "jest": "27.3.1",
+    "parcel": "2.0.0",
+    "rimraf": "3.0.2",
+    "sucrase": "3.20.3",
+    "typescript": "4.4.4"
   },
   "engines": {
     "node": ">=14.15.4",
     "npm": ">= 7.0.15"
+  },
+  "modern": "dist/module.js",
+  "legacy": "dist/legacy.js",
+  "targets": {
+    "modern": {
+      "engines": {
+        "browsers": "Chrome 80"
+      }
+    },
+    "legacy": {
+      "engines": {
+        "browsers": "> 0.5%, last 2 versions, not dead"
+      }
+    }
   },
   "funding": [
     {
@@ -56,6 +76,5 @@
       "type": "patreon",
       "url": "https://www.patreon.com/harrytran998"
     }
-  ],
-  "packageManager": "yarn@3.0.1"
+  ]
 }
