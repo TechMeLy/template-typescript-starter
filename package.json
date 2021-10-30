@@ -9,7 +9,7 @@
     "url": "https://github.com/TechMeLy/template-typescript.git"
   },
   "source": "src/index.ts",
-  "main": "dist/main.js",
+  "main": "dist/index.js",
   "types": "dist/types.d.ts",
   "files": [
     "dist"
