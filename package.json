@@ -39,7 +39,7 @@
     "@sucrase/jest-plugin": "2.2.0",
     "@techmely/eslint-config-ts": "0.0.16",
     "@techmely/types": "0.0.3",
-    "@types/jest": "27.0.2",
+    "@types/jest": "27.0.3",
     "@types/node": "16.11.11",
     "bundlesize": "0.18.1",
     "eslint": "8.1.0",
