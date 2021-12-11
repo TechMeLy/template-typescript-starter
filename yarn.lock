@@ -2391,20 +2391,21 @@
     "@parcel/plugin" "^2.0.0"
     "@parcel/ts-utils" "^2.0.0"
 
-"@parcel/transformer-typescript-types@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-typescript-types/-/transformer-typescript-types-2.0.0.tgz#bafbfc7b94c74ae79c7404a63fd72a4049b3cc8a"
-  integrity sha512-ZTGgmHpWhekCFPvjKlRw4RwNpW8W/jRdfV0ZG5PqkUPdKf7Ho0HZ2XPJBWtEovo6AJhInT6Bq+E86tXeZSC9zg==
+"@parcel/transformer-typescript-types@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-typescript-types/-/transformer-typescript-types-2.0.1.tgz#b4016c15ecd421273a2986bd1105fa58a43bf6ca"
+  integrity sha512-iFqj0GD/fQms5uXgKru+OJgTDvRMy8+doH3tf/PhDZwjgSTYyYSAJs2ZnZJX3GShSlVCLKwXnC5WiA/w13yzEw==
   dependencies:
-    "@parcel/plugin" "^2.0.0"
+    "@parcel/diagnostic" "^2.0.1"
+    "@parcel/plugin" "^2.0.1"
     "@parcel/source-map" "^2.0.0"
-    "@parcel/ts-utils" "^2.0.0"
+    "@parcel/ts-utils" "^2.0.1"
     nullthrows "^1.1.1"
 
-"@parcel/ts-utils@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@parcel/ts-utils/-/ts-utils-2.0.0.tgz#89954d341a8942cb6ddcda217f5f7b38914bef12"
-  integrity sha512-+jMwsBu5+gyp8iw+h6CN1MR8hYDALdO1ccphHPD2WMzQHpvvp+hhZ/gUfN70ioPz9DOG/d6BMlfm/HVaZLePsA==
+"@parcel/ts-utils@^2.0.0", "@parcel/ts-utils@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@parcel/ts-utils/-/ts-utils-2.0.1.tgz#93b2de96b08aad7cf747f7806330f335c664b96c"
+  integrity sha512-Zu3p+1q3YxSZTuAa26KpQOGmdjNfrbBgyTpncg9+Q+EIGtkhFHWiEpx/fok9qyqFxiTfe1jAUKzTUeqPjt+F0Q==
   dependencies:
     nullthrows "^1.1.1"
 
