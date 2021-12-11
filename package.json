@@ -31,7 +31,7 @@
   "devDependencies": {
     "@ls-lint/ls-lint": "1.10.0",
     "@parcel/babel-plugin-transform-runtime": "2.0.0",
-    "@parcel/babel-preset-env": "2.0.0",
+    "@parcel/babel-preset-env": "2.0.1",
     "@parcel/config-default": "2.0.0",
     "@parcel/packager-ts": "2.0.1",
     "@parcel/transformer-typescript-tsc": "2.0.0",
