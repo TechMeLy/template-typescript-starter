@@ -21,8 +21,6 @@
     "lint:eslint": "eslint --cache --ext .ts . --ignore-path .eslintignore",
     "lint:eslint:quiet": "eslint --cache --ext .ts . --ignore-path .eslintignore --quiet",
     "lint:eslint:fix": "eslint --cache --ext .ts . --ignore-path .eslintignore --fix",
-    "watch": "parcel watch",
-    "build": "parcel build",
     "bundlesize": "bundlesize --config bundlesize.config.json",
     "test:jest": "jest --passWithNoTests",
     "test:jest:silent": "jest --silent --passWithNoTests",
@@ -30,12 +28,6 @@
   },
   "devDependencies": {
     "@ls-lint/ls-lint": "1.10.0",
-    "@parcel/babel-plugin-transform-runtime": "2.0.0",
-    "@parcel/babel-preset-env": "2.0.0",
-    "@parcel/config-default": "2.0.0",
-    "@parcel/packager-ts": "2.0.1",
-    "@parcel/transformer-typescript-tsc": "2.0.0",
-    "@parcel/transformer-typescript-types": "2.0.0",
     "@sucrase/jest-plugin": "2.2.0",
     "@techmely/eslint-config-ts": "0.0.16",
     "@techmely/types": "0.0.3",
@@ -44,28 +36,13 @@
     "bundlesize": "0.18.1",
     "eslint": "8.1.0",
     "jest": "27.4.3",
-    "parcel": "2.0.1",
     "rimraf": "3.0.2",
     "sucrase": "3.20.3",
     "typescript": "4.4.4"
   },
   "engines": {
-    "node": ">=14.15.4",
-    "npm": ">= 7.0.15"
-  },
-  "modern": "dist/module.js",
-  "legacy": "dist/legacy.js",
-  "targets": {
-    "modern": {
-      "engines": {
-        "browsers": "Chrome 80"
-      }
-    },
-    "legacy": {
-      "engines": {
-        "browsers": "> 0.5%, last 2 versions, not dead"
-      }
-    }
+    "node": ">=16.13.0",
+    "npm": ">=8.1.0"
   },
   "funding": [
     {
