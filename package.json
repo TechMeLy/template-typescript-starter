@@ -32,7 +32,7 @@
     "@sucrase/jest-plugin": "2.2.0",
     "@techmely/types": "0.0.3",
     "@types/jest": "27.0.3",
-    "@types/node": "17.0.0",
+    "@types/node": "17.0.5",
     "bundlesize": "0.18.1",
     "eslint": "8.1.0",
     "jest": "27.4.5",
