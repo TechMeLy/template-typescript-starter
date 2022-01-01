@@ -715,6 +715,11 @@
   dependencies:
     sucrase "^3.18.0"
 
+"@techmely/build-configs@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@techmely/build-configs/-/build-configs-1.0.3.tgz#b2b4cd8e17d01f72d7e314280c04281bc17e860e"
+  integrity sha512-u3Np15CBSGkqxeDd7bU8cqaqN1W4H6GavICjL5RW1BNtKdbe+PuKE4+6DZ51mx2llrB0v9qwORO+ZYVCjYyEgw==
+
 "@techmely/eslint-config-ts@0.0.16":
   version "0.0.16"
   resolved "https://registry.yarnpkg.com/@techmely/eslint-config-ts/-/eslint-config-ts-0.0.16.tgz#b08109b54e2a2da6dda1c16c1959f4ae5c8410a0"
@@ -735,10 +740,12 @@
     eslint-plugin-yml "0.10.1"
     yaml-eslint-parser "0.4.1"
 
-"@techmely/types@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@techmely/types/-/types-0.0.3.tgz#b489dc8349fd80ff3e9bf1c9fde6e6e58ec2398d"
-  integrity sha512-TB2bkcUGYGs0TdohWGRRBzHe63/mHdlUc06HNv+mJuh63Mj31/Ob/1P7Wy6XtQjKnYD2ZvHc+HYRSIJTzuz7Hg==
+"@techmely/types@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@techmely/types/-/types-1.0.4.tgz#9a7bea43480db16382fbfe36c9b5bdd3933ea688"
+  integrity sha512-jlMn3Z/n4T5oIcGvNYCunxsTYivW72lOsa2TxoT1i7JJryYzVK27V7cc/RCdAWC8rAkn/srDLEC1/Eq86UrKIw==
+  dependencies:
+    "@techmely/build-configs" "1.0.3"
 
 "@tootallnate/once@1":
   version "1.1.2"
