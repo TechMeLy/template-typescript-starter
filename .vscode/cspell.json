@@ -9,6 +9,7 @@
         "codeql",
         "eslintignore",
         "harrytran",
+        "hogsfather",
         "inmemory",
         "lozad",
         "patreon",
@@ -21,6 +22,7 @@
         "stylelint",
         "techmely",
         "tsup",
-        "vite"
+        "vite",
+        "vitest"
     ]
 }
